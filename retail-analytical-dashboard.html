@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Demo Retail Analytical Dashboard — Badmus Abdulhameed Olamikun">
+<title>Demo Retail Analytical Dashboard | Badmus Abdulhameed Olamikun</title>
+<style>
+:root{--ink:#182334;--muted:#6b7788;--blue:#3f73c9;--blue2:#75a7f0;--bg:#eef2f6;--card:#fff;--line:#d9e0e8;--dark:#2d3b4f}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;background:linear-gradient(135deg,#edf2f7,#f7f9fc);color:var(--ink)}.wrap{max-width:1180px;margin:auto;padding:28px 22px 60px}.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:24px}.back{color:#315fa9;text-decoration:none;font-weight:700}.badge{font-size:12px;font-weight:800;letter-spacing:.12em;color:white;background:#2d3b4f;padding:9px 13px;border-radius:999px}.hero{background:linear-gradient(120deg,#253448,#3d4e64);color:#fff;border-radius:26px;padding:42px;box-shadow:0 20px 55px #23364d22}.hero h1{font-size:clamp(32px,5vw,58px);margin:10px 0 12px;line-height:1.02}.hero p{max-width:760px;color:#e6ebf2;font-size:17px;line-height:1.7}.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:28px}.metric{background:#ffffff12;border:1px solid #ffffff2c;border-radius:18px;padding:20px}.metric b{display:block;font-size:27px}.metric span{color:#dbe3ec;font-size:13px}.grid{display:grid;grid-template-columns:1.3fr .7fr;gap:18px;margin-top:18px}.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:22px;box-shadow:0 10px 30px #2030400b}.card h2{font-size:17px;margin:0 0 18px}.wide{grid-column:1/-1}.bars{display:grid;gap:11px}.barrow{display:grid;grid-template-columns:145px 1fr 95px;align-items:center;gap:10px;font-size:12px}.track{height:11px;background:#edf1f5;border-radius:99px;overflow:hidden}.fill{height:100%;background:linear-gradient(90deg,var(--blue),var(--blue2));border-radius:99px}.mini{display:grid;grid-template-columns:1fr 65px;gap:8px;margin:10px 0;font-size:12px}.mini .track{height:9px}.chips{display:flex;flex-wrap:wrap;gap:8px}.chip{background:#eef4ff;color:#315fa9;border-radius:999px;padding:8px 11px;font-size:12px;font-weight:700}.callout{margin-top:18px;background:#fff;border-left:5px solid var(--blue);border-radius:18px;padding:22px;line-height:1.7}.footer{margin-top:28px;color:var(--muted);font-size:13px;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}@media(max-width:760px){.metrics,.grid{grid-template-columns:1fr}.wide{grid-column:auto}.hero{padding:28px}.barrow{grid-template-columns:105px 1fr 85px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="top"><a class="back" href="index.html">← Back to portfolio</a><span class="badge">RETAIL ANALYTICS</span></div>
+<section class="hero">
+<div class="badge">DASHBOARD CASE STUDY</div>
+<h1>Demo Retail Analytical Dashboard</h1>
+<p>A responsive HTML version of the supplied retail dashboard, presenting sales performance through revenue, quantity sold, regions, products, customers, sales reps, payment methods and order status.</p>
+<div class="metrics">
+<div class="metric"><b>$116,663,595</b><span>Total revenue</span></div>
+<div class="metric"><b>10,015</b><span>Total quantity sold</span></div>
+<div class="metric"><b>7</b><span>Regions</span></div>
+</div>
+</section>
+
+<div class="grid">
+<section class="card"><h2>Revenue generated per product category</h2>
+<div class="barrow"><span>Home & Living</span><div class="track"><div class="fill" style="width:100%"></div></div><b>$52,652,554</b></div><div class="barrow"><span>Fashion</span><div class="track"><div class="fill" style="width:41%"></div></div><b>$21,612,150</b></div><div class="barrow"><span>Electronics</span><div class="track"><div class="fill" style="width:40%"></div></div><b>$21,077,530</b></div><div class="barrow"><span>Health & Beauty</span><div class="track"><div class="fill" style="width:26%"></div></div><b>$13,803,526</b></div><div class="barrow"><span>Groceries</span><div class="track"><div class="fill" style="width:14%"></div></div><b>$7,517,836</b></div>
+</section>
+
+<section class="card"><h2>Order count by status</h2>
+<div class="mini"><span>Completed</span><b>491</b><div class="track" style="grid-column:1/-1"><div class="fill" style="width:100%"></div></div></div><div class="mini"><span>Pending</span><b>173</b><div class="track" style="grid-column:1/-1"><div class="fill" style="width:35%"></div></div></div><div class="mini"><span>Cancelled</span><b>158</b><div class="track" style="grid-column:1/-1"><div class="fill" style="width:32%"></div></div></div><div class="mini"><span>Returned</span><b>153</b><div class="track" style="grid-column:1/-1"><div class="fill" style="width:31%"></div></div></div>
+</section>
+
+<section class="card"><h2>Top 10 customers by revenue</h2>
+<div class="barrow"><span>Rita Okafor</span><div class="track"><div class="fill" style="width:100%"></div></div><b>$19,218,092</b></div><div class="barrow"><span>Ifeoma Ude</span><div class="track"><div class="fill" style="width:66%"></div></div><b>$12,723,880</b></div><div class="barrow"><span>Damilola Chukwu</span><div class="track"><div class="fill" style="width:43%"></div></div><b>$8,186,521</b></div><div class="barrow"><span>Amara Bello</span><div class="track"><div class="fill" style="width:31%"></div></div><b>$5,999,772</b></div><div class="barrow"><span>Halima Okoro</span><div class="track"><div class="fill" style="width:27%"></div></div><b>$5,240,421</b></div><div class="barrow"><span>Musa Adeleke</span><div class="track"><div class="fill" style="width:14%"></div></div><b>$2,628,160</b></div><div class="barrow"><span>Grace Abubakar</span><div class="track"><div class="fill" style="width:12%"></div></div><b>$2,335,754</b></div><div class="barrow"><span>Folake Nnamdi</span><div class="track"><div class="fill" style="width:12%"></div></div><b>$2,254,758</b></div><div class="barrow"><span>Zainab Ogunleye</span><div class="track"><div class="fill" style="width:10%"></div></div><b>$1,924,060</b></div><div class="barrow"><span>Amara Afolabi</span><div class="track"><div class="fill" style="width:3%"></div></div><b>$604,092</b></div>
+</section>
+
+<section class="card"><h2>Quantity sold per region</h2>
+<div class="barrow" style="grid-template-columns:105px 1fr 48px"><span>Port Harcourt</span><div class="track"><div class="fill" style="width:100%"></div></div><b>1721</b></div><div class="barrow" style="grid-template-columns:105px 1fr 48px"><span>Kano</span><div class="track"><div class="fill" style="width:97%"></div></div><b>1677</b></div><div class="barrow" style="grid-template-columns:105px 1fr 48px"><span>Abuja</span><div class="track"><div class="fill" style="width:94%"></div></div><b>1623</b></div><div class="barrow" style="grid-template-columns:105px 1fr 48px"><span>Enugu</span><div class="track"><div class="fill" style="width:93%"></div></div><b>1600</b></div><div class="barrow" style="grid-template-columns:105px 1fr 48px"><span>Lagos</span><div class="track"><div class="fill" style="width:93%"></div></div><b>1593</b></div><div class="barrow" style="grid-template-columns:105px 1fr 48px"><span>Ibadan</span><div class="track"><div class="fill" style="width:91%"></div></div><b>1570</b></div><div class="barrow" style="grid-template-columns:105px 1fr 48px"><span>Unknown</span><div class="track"><div class="fill" style="width:13%"></div></div><b>231</b></div>
+</section>
+
+<section class="card"><h2>Payment method preference by order</h2>
+<div class="chips"><span class="chip">Bank Transfer · 226</span><span class="chip">Card · 246</span><span class="chip">Cash · 276</span><span class="chip">Transfer · 115</span><span class="chip">USSD · 112</span></div>
+</section>
+
+<section class="card"><h2>Dashboard dimensions covered</h2>
+<div class="chips"><span class="chip">Top products</span><span class="chip">Product category revenue</span><span class="chip">Top customers</span><span class="chip">Sales reps</span><span class="chip">Monthly revenue</span><span class="chip">Order status</span><span class="chip">Payment methods</span><span class="chip">Regional quantity</span></div>
+</section>
+
+<section class="card wide"><h2>Top sales-rep quantity figures shown in the source dashboard</h2>
+<div class="barrow"><span>C. Eze</span><div class="track"><div class="fill" style="width:100%"></div></div><b>1721</b></div><div class="barrow"><span>S. Balogun</span><div class="track"><div class="fill" style="width:97%"></div></div><b>1677</b></div><div class="barrow"><span>N. Chukwu</span><div class="track"><div class="fill" style="width:94%"></div></div><b>1623</b></div><div class="barrow"><span>R. Ibrahim</span><div class="track"><div class="fill" style="width:93%"></div></div><b>1600</b></div><div class="barrow"><span>F. Musa</span><div class="track"><div class="fill" style="width:93%"></div></div><b>1593</b></div><div class="barrow"><span>T. Adeyemi</span><div class="track"><div class="fill" style="width:91%"></div></div><b>1570</b></div><div class="barrow"><span>B. Okonkwo</span><div class="track"><div class="fill" style="width:13%"></div></div><b>231</b></div>
+</section>
+</div>
+
+<div class="callout"><strong>Portfolio note:</strong> This page converts the supplied retail dashboard into a responsive HTML presentation while retaining the dashboard's main KPI values and analytical sections. The source dashboard reports total revenue of $116,663,595, quantity sold of 10,015 and 7 regions.</div>
+<div class="footer"><span>Badmus Abdulhameed Olamikun · Data Analyst Portfolio</span><a href="index.html">View all projects ↗</a></div>
+</div>
+</body>
+</html>
