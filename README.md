@@ -9,7 +9,7 @@ Portfolio website for Badmus Abdulhameed Olamikun, built from the work in this r
 - SQL practice
 
 ## Tools
-Python · Pandas · SQL · PostgreSQL · Excel · Statistics
+Python · Pandas .Power Bi · SQL · PostgreSQL · Excel · Statistics
 
 ## Contact
 badmusolamikun@gmail.com
