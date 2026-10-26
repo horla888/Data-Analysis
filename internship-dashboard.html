@@ -3,62 +3,24 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Product Analysis Dashboard, DS Internship Project 1, covering 2011–2014 retail product performance, outlets, producers, insights and recommendations.">
-<title>Product Analysis Dashboard | DS Internship Project</title>
+<meta name="description" content="Original DS Internship Product Analysis Dashboard, preserved exactly from the supplied PDF.">
+<title>DS Internship Dashboard Project 1 | Badmus Abdulhameed Olamikun</title>
 <style>
-:root{--bg:#f4f7fb;--card:#fff;--ink:#17233b;--muted:#66738a;--line:#e6ebf3;--blue:#3d63dd;--teal:#13a89e;--orange:#f4a340;--purple:#8764d8;--shadow:0 8px 26px rgba(25,43,78,.07)}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
-header{background:linear-gradient(120deg,#152746,#2d4c87);color:#fff;padding:25px clamp(18px,4vw,54px)}.top{max-width:1240px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}.eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:11px;font-weight:800;color:#a9c7ff}h1{font-size:clamp(26px,4vw,42px);line-height:1.1;margin:8px 0}.sub{color:#d4e0f6;margin:0}.back{color:#fff;text-decoration:none;border:1px solid #7891bd;padding:9px 13px;border-radius:10px;font-weight:650}
-main{max-width:1240px;margin:24px auto;padding:0 clamp(12px,3vw,28px) 42px}.filters{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:18px}.filters p{margin:0;color:var(--muted)}.years{display:flex;gap:7px;flex-wrap:wrap}.years button{border:1px solid #d5deed;background:white;color:#34415c;padding:8px 14px;border-radius:9px;font-weight:700;cursor:pointer}.years button.active,.years button:hover{background:var(--blue);border-color:var(--blue);color:white}
-.grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:16px}.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;box-shadow:var(--shadow);min-width:0}.metric{grid-column:span 4}.wide{grid-column:span 7}.narrow{grid-column:span 5}.full{grid-column:span 12}.card h2{font-size:16px;margin:0 0 5px}.muted{color:var(--muted);font-size:13px;margin:0 0 18px}.number{font-size:clamp(28px,3vw,36px);font-weight:850;letter-spacing:-.04em;margin:7px 0}.metric-foot{font-size:12px;color:var(--muted)}.metric .icon{float:right;background:#edf2ff;color:var(--blue);width:38px;height:38px;border-radius:12px;display:grid;place-items:center;font-size:19px}
-.outlet-list{display:grid;gap:17px}.outlet-head{display:flex;justify-content:space-between;gap:12px;font-weight:700;font-size:13px;margin-bottom:7px}.track{height:10px;background:#edf1f7;border-radius:20px;overflow:hidden}.fill{height:100%;border-radius:20px;transition:width .25s}.blue{background:var(--blue)}.teal{background:var(--teal)}.orange{background:var(--orange)}.purple{background:var(--purple)}
-.producers{display:grid;gap:12px}.producer{display:grid;grid-template-columns:minmax(110px,150px) 1fr 42px;align-items:center;gap:10px;font-size:13px}.producer .name{overflow-wrap:anywhere}.producer .track{height:11px}.producer strong{text-align:right;font-variant-numeric:tabular-nums}
-.product-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.product{border:1px solid var(--line);background:#fbfcff;border-radius:12px;padding:15px}.product .emoji{font-size:22px}.product h3{font-size:14px;margin:7px 0 3px}.product p{font-size:12px;color:var(--muted);margin:0}
-.insights{display:grid;grid-template-columns:1fr 1fr;gap:18px}.insights h3{font-size:15px;margin:0 0 12px}.insights ol{padding-left:20px;margin:0;display:grid;gap:10px}.insights li{padding-left:3px;color:#3e4b63;font-size:13px}.insights strong{color:var(--ink)}.recommend{background:#f0f8f7;border:1px solid #d8efea;border-radius:12px;padding:15px;margin-top:12px;color:#244c4a;font-size:13px}
-footer{text-align:center;color:var(--muted);font-size:12px;padding:20px}
-@media(max-width:760px){.metric{grid-column:span 12}.wide,.narrow{grid-column:span 12}.product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.insights{grid-template-columns:1fr}.card{padding:17px}.producer{grid-template-columns:minmax(92px,125px) 1fr 38px}}
-@media(max-width:420px){.product-grid{grid-template-columns:1fr}.producer{grid-template-columns:100px 1fr 35px;font-size:12px}}
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;font-family:Arial,Helvetica,sans-serif;background:#f2f4f8;color:#172033}
+header{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:12px 20px;background:#fff;border-bottom:1px solid #dfe4ec}
+header a{color:#254fa8;text-decoration:none;font-weight:600}header strong{font-size:15px}
+main{max-width:1240px;margin:0 auto;padding:14px}
+.viewer{background:#fff;border:1px solid #dce2eb;box-shadow:0 4px 18px rgba(25,40,70,.08);overflow:hidden}
+iframe{display:block;width:100%;height:calc(100vh - 95px);min-height:680px;border:0;background:#fff}
+@media(max-width:600px){header{padding:12px}main{padding:6px}.viewer{border:0}iframe{height:calc(100vh - 78px);min-height:560px}}
 </style>
 </head>
 <body>
-<header><div class="top"><div><div class="eyebrow">Data Science Internship · Project 01</div><h1>Product Analysis Dashboard</h1><p class="sub">Retail product performance and outlet analysis · 2011–2014</p></div><a class="back" href="index.html#work">← Back to portfolio</a></div></header>
-<main>
-<div class="filters"><p>Explore the four-year reporting period. The source report highlights product categories and overall outlet / producer performance.</p><div class="years" aria-label="Reporting year"><button class="active" data-year="All">All years</button><button data-year="2011">2011</button><button data-year="2012">2012</button><button data-year="2013">2013</button><button data-year="2014">2014</button></div></div>
-<section class="grid">
-<article class="card metric"><span class="icon">▤</span><div class="muted">Total producers reported</div><div class="number">15,118</div><div class="metric-foot">Producer count stated in the source dashboard</div></article>
-<article class="card metric"><span class="icon">◈</span><div class="muted">Product groups</div><div class="number">15</div><div class="metric-foot">Product groups produced and sold</div></article>
-<article class="card metric"><span class="icon">▥</span><div class="muted">Period covered</div><div class="number">4 years</div><div class="metric-foot">2011 through 2014</div></article>
-<article class="card narrow"><h2>Best-selling outlet mix</h2><p class="muted">Share by retail outlet in the source report</p><div class="outlet-list">
-<div><div class="outlet-head"><span>Convenience stores</span><strong>80%</strong></div><div class="track"><div class="fill blue" style="width:80%"></div></div></div>
-<div><div class="outlet-head"><span>Hypermarkets</span><strong>13%</strong></div><div class="track"><div class="fill teal" style="width:13%"></div></div></div>
-<div><div class="outlet-head"><span>Supermarkets</span><strong>7%</strong></div><div class="track"><div class="fill orange" style="width:7%"></div></div></div>
-</div></article>
-<article class="card wide"><h2>Top 10 producers</h2><p class="muted">Producer ranking and values shown in the source dashboard</p><div class="producers">
-<div class="producer"><span class="name">North Cascade</span><div class="track"><div class="fill blue" style="width:100%"></div></div><strong>899</strong></div>
-<div class="producer"><span class="name">Lieken</span><div class="track"><div class="fill teal" style="width:81.3%"></div></div><strong>731</strong></div>
-<div class="producer"><span class="name">San Pellegrino</span><div class="track"><div class="fill purple" style="width:75.8%"></div></div><strong>681</strong></div>
-<div class="producer"><span class="name">Bonduelle</span><div class="track"><div class="fill orange" style="width:75.4%"></div></div><strong>678</strong></div>
-<div class="producer"><span class="name">Mindi</span><div class="track"><div class="fill blue" style="width:62.1%"></div></div><strong>558</strong></div>
-<div class="producer"><span class="name">Delta</span><div class="track"><div class="fill teal" style="width:57%"></div></div><strong>512</strong></div>
-<div class="producer"><span class="name">Cibo italiano</span><div class="track"><div class="fill purple" style="width:47.6%"></div></div><strong>428</strong></div>
-<div class="producer"><span class="name">Surgital</span><div class="track"><div class="fill orange" style="width:38.3%"></div></div><strong>344</strong></div>
-<div class="producer"><span class="name">Chocopops</span><div class="track"><div class="fill blue" style="width:37%"></div></div><strong>333</strong></div>
-<div class="producer"><span class="name">Genco</span><div class="track"><div class="fill teal" style="width:36.7%"></div></div><strong>330</strong></div>
-</div></article>
-<article class="card full"><h2>Product groups featured in annual best-seller comparison</h2><p class="muted">Categories labelled in the original 2011–2014 chart</p><div class="product-grid">
-<div class="product"><div class="emoji">🥗</div><h3>Fresh salads</h3><p>Identified in the source insights as the most-selling product over the years.</p></div>
-<div class="product"><div class="emoji">☕</div><h3>Coffee</h3><p>Included among the product categories compared by year.</p></div>
-<div class="product"><div class="emoji">🍦</div><h3>Ice cream</h3><p>Included among the product categories compared by year.</p></div>
-<div class="product"><div class="emoji">🥫</div><h3>Sauces</h3><p>Included among the product categories compared by year.</p></div>
-<div class="product"><div class="emoji">🥤</div><h3>Beverages</h3><p>Included among the product categories compared by year.</p></div>
-<div class="product"><div class="emoji">✨</div><h3>Cosmetics</h3><p>Included among the product categories compared by year.</p></div>
-</div></article>
-<article class="card full"><div class="insights"><section><h3>Key insights</h3><ol><li><strong>Fresh salads</strong> are reported as the most-selling product over the years.</li><li><strong>North Cascade</strong> is identified as the best producer over the period.</li><li><strong>Convenience stores</strong> are the leading outlet, accounting for 80% in the displayed outlet mix.</li><li>The report states a total of <strong>15,118 producers</strong>.</li><li>The report states that <strong>15 product groups</strong> are produced and sold.</li></ol></section><section><h3>Recommendations</h3><ol><li>Consider increased investment in the fresh-salad market in response to the reported demand trend.</li><li>Prioritize product supply and distribution to convenience stores, which account for the largest share in the report.</li></ol><div class="recommend"><strong>Business takeaway:</strong> The report points to fresh salads and convenience-store distribution as the clearest opportunities to investigate further.</div></section></div></article>
-</section>
-<footer>Product Analysis Dashboard · Data Science Internship Project 1 · Based on the supplied PDF report</footer>
-</main>
-<script>
-document.querySelectorAll('.years button').forEach(button=>button.addEventListener('click',()=>{document.querySelectorAll('.years button').forEach(b=>b.classList.remove('active'));button.classList.add('active');document.querySelector('.filters p').textContent=button.dataset.year==='All'?'Explore the four-year reporting period. The source report highlights product categories and overall outlet / producer performance.':'Selected reporting year: '+button.dataset.year+'. The supplied PDF shows annual product comparisons for 2011–2014; overall outlet and producer summaries are retained below.';}));
-</script>
+<header><strong>DS Internship Dashboard Project 1</strong><a href="index.html#work">← Back to portfolio</a></header>
+<main><div class="viewer">
+<iframe title="Original Product Analysis Dashboard PDF, preserved in its original layout" src="DS-internship%20dashboard%20project1.pdf#toolbar=1&navpanes=0&view=FitH">
+<p>Your browser cannot display the original dashboard. <a href="DS-internship%20dashboard%20project1.pdf">Open the original PDF</a>.</p>
+</iframe>
+</div></main>
 </body>
 </html>
