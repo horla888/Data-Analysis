@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Original dashboard displayed in full, preserving all pages and charts from the PDF.">
+<title>1st Project Dashboard | Badmus Abdulhameed Olamikun</title>
+<style>
+:root{color-scheme:dark;--bg:#10131c;--panel:#1a2030;--text:#f3f5fb;--muted:#b9c2d5;--accent:#9ef0d0}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+header{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1rem clamp(1rem,4vw,3rem);background:#171c29;border-bottom:1px solid #30384a}
+a{color:var(--accent)}.brand{color:var(--text);font-weight:750;text-decoration:none}.back{font-size:.95rem}
+main{padding:1.25rem clamp(.5rem,2vw,1.5rem) 2rem}.intro{display:flex;justify-content:space-between;align-items:end;gap:1rem;flex-wrap:wrap;max-width:1600px;margin:0 auto 1rem}
+h1{font-size:clamp(1.5rem,3vw,2.4rem);line-height:1.15;margin:0 0 .4rem}.intro p{margin:0;color:var(--muted)}.actions{display:flex;gap:.7rem;flex-wrap:wrap}
+.actions a{display:inline-block;border:1px solid #566079;border-radius:999px;padding:.55rem .9rem;text-decoration:none;font-weight:650}
+.viewer{max-width:1600px;margin:auto;border:1px solid #394157;border-radius:14px;overflow:hidden;background:#252b38;box-shadow:0 20px 70px #0005}
+iframe{display:block;width:100%;height:calc(100vh - 175px);min-height:620px;border:0;background:white}
+.note{max-width:1600px;margin:.85rem auto 0;color:var(--muted);font-size:.9rem}
+@media(max-width:650px){header{align-items:flex-start;flex-direction:column}.intro{align-items:flex-start}iframe{height:78vh;min-height:520px}}
+</style>
+</head>
+<body>
+<header><a class="brand" href="index.html">BA · Data Analytics Portfolio</a><a class="back" href="index.html#work">← Back to projects</a></header>
+<main>
+<section class="intro"><div><h1>1st Project Dashboard</h1><p>Original report viewer · all source PDF pages retained</p></div><div class="actions"><a href="1st%20project%20dashboard.pdf" target="_blank" rel="noopener">Open original PDF ↗</a><a href="1st%20project%20dashboard.pdf" download>Download PDF ↓</a></div></section>
+<div class="viewer"><iframe src="1st%20project%20dashboard.pdf#view=FitH" title="1st Project Dashboard — original PDF dashboard" loading="eager"></iframe></div>
+<p class="note">This page displays the original PDF instead of recreating its charts, so the report’s existing visuals and page layout are preserved. If your browser does not display the PDF inline, use “Open original PDF”.</p>
+</main>
+</body>
+</html>
